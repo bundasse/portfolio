@@ -1,0 +1,325 @@
+{ "portlist":[
+    {
+        "img":"/clone/irum.png",
+        "title":"거제청년센터 이룸 메인 페이지 클론코딩",
+        "desc":{
+            "desc":"거제청년센터 이룸의 메인 페이지를 클론코딩한 작업물입니다. 처음 HTML과 CSS를 배우고 시작한 프로젝트입니다.",
+            "point":"디자인 시안 대신 웹사이트 스크린샷을 보고 스크린샷 이미지와 일치하는 작업물을 만들 수 있도록 노력했습니다. 또한 웹표준을 준수하는데 중점을 두었습니다.",
+            "learned":"이 작업을 통해 HTML 웹표준의 개념과 일반적인 웹사이트의 구조, 각 요소들을 이루는 태그로는 어떤 것을 쓰는 지를 배웠습니다. 또한 CSS의 기본을 익혔습니다."
+            },
+        "date":"2023.01.10",
+        "howlong":5,
+        "category":"클론코딩",
+        "keyword":["클론코딩","HTML","CSS","반응형"],
+        "tools":["HTML","CSS"],
+        "originLink":"https://geojeyouth.com/web/",
+        "siteLink":"https://bundasse.github.io/clone_irum/",
+        "docu":""
+    },
+    {
+        "img":"/clone/cgv.png",
+        "title":"CGV 메인 페이지 클론코딩",
+        "desc":{
+            "desc":"HTML과 CSS의 기본을 익힌 후 과제로 직접 사이트를 선정하여 클론코딩 한 프로젝트입니다.",
+            "point":"과제 목표는 HTML과 CSS를 활용하여 웹사이트 디자인을 구현하는 것까지였으나, 개인적으로 자바스크립트를 공부하여 비디오 제어, 상단 이동 버튼, 내비게이션 등을 구현했습니다.",
+            "learned":""
+            },
+        "date":"2023.02.03",
+        "howlong":8,
+        "category":"클론코딩",
+        "keyword":["클론코딩","HTML","CSS","JS","Swiper","반응형"],
+        "tools":["HTML","CSS","JS","Swiper"],
+        "originLink":"https://www.cgv.co.kr/",
+        "siteLink":"https://bundasse.github.io/clone_cgv/",
+        "docu":""
+    },
+    {
+        "img":"/clone/todomate.png",
+        "title":"투두 메이트 와이어프레임 분석/클론코딩",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.02.20",
+        "howlong":5,
+        "category":"클론코딩",
+        "keyword":["클론코딩","HTML","CSS"],
+        "tools":["HTML","CSS"],
+        "originLink":"https://www.todomate.net/",
+        "siteLink":"https://bundasse.github.io/clone_todomate/",
+        "docu":""
+    },
+    {
+        "img":"/webapp/festival.png",
+        "title":"부산 축제정보 공공데이터 기반 웹앱",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.03.09",
+        "howlong":7,
+        "category":"웹앱",
+        "keyword":["웹앱","Vue.js","TailwindCss","공공데이터 API","반응형"],
+        "tools":["Vue.js","TailwindCss","공공데이터 API"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"/webapp/parcel.png",
+        "title":"택배 배송현황 조회 웹앱",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.03.14",
+        "howlong":2,
+        "category":"웹앱",
+        "keyword":["웹앱","Vue.js","TailwindCss","서드파티 API","반응형"],
+        "tools":["Vue.js","TailwindCss","택배조회 API"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"/webapp/movie.png",
+        "title":"OTT서비스 금주의 히트작 웹앱",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.03.10",
+        "howlong":4,
+        "category":"웹앱",
+        "keyword":["웹앱","Vue.js","TailwindCss","서드파티 API","반응형"],
+        "tools":["Vue.js","TailwindCss","TMDB 영화 API"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"/webapp/calculator.png",
+        "title":"비율 계산기 웹앱",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.03.10",
+        "howlong":3,
+        "category":"웹앱",
+        "keyword":["웹앱","Vue.js","TailwindCss","반응형"],
+        "tools":["Vue.js","TailwindCss"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"/clone/waterworks.png",
+        "title":"대구상수도사업본부 메인 페이지 클론코딩",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"",
+        "howlong":7,
+        "category":"클론코딩",
+        "keyword":["클론코딩","Vue.js","TailwindCss","반응형"],
+        "tools":["Vue.js","TailwindCss"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"/webapp/quiz.png",
+        "title":"HTML 관련 퀴즈 웹앱",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"",
+        "howlong":2,
+        "category":"웹앱",
+        "keyword":["웹앱","Vue.js","TailwindCss","반응형"],
+        "tools":["Vue.js","TailwindCss"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"/mini/amadeus-card.png",
+        "title":"신화창세RPG 아마데우스 카드 생성기",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.04.30",
+        "howlong":2,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","Vue.js","TailwindCss","반응형"],
+        "tools":["Vue.js","TailwindCss","dom-to-image"],
+        "originLink":"",
+        "siteLink":"http://bundasse.dothome.co.kr/",
+        "docu":""
+    },
+    {
+        "img":"/clone/bifan.png",
+        "title":"부천국제판타스틱영화제 메인 페이지 클론코딩",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"",
+        "howlong":10,
+        "category":"클론코딩",
+        "keyword":["클론코딩","Vue.js","TailwindCss","반응형"],
+        "tools":["Vue.js","TailwindCss"],
+        "originLink":"http://www.bifan.kr/",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"/homepage/templatehome.png",
+        "title":"기업 홈페이지용 템플릿 페이지",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.05.15",
+        "howlong":19,
+        "category":"홈페이지",
+        "keyword":["홈페이지","TailwindCss","Vue.js","Firebase","DB","반응형"],
+        "tools":["TailwindCss","Vue.js","Firebase"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"",
+        "title":"포트폴리오 페이지",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"",
+        "howlong":14,
+        "category":"홈페이지",
+        "keyword":["홈페이지","기획","디자인","SCSS","Vue.js","반응형"],
+        "tools":["SCSS","Vue.js"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"",
+        "title":"",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"",
+        "howlong":14,
+        "category":"홈페이지",
+        "keyword":["홈페이지","기획","TailwindCss","Vue.js","공공데이터 API","Firebase","DB","반응형"],
+        "tools":["TailwindCss","Vue.js","공공데이터 API","Firebase"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"/mini/QRcode-component.png",
+        "title":"QR코드 컴포넌트",
+        "desc":{
+            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.01.21",
+        "howlong":1,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","HTML","CSS","반응형"],
+        "tools":["HTML","CSS"],
+        "originLink":"",
+        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/QRcode-component/index.html",
+        "docu":"https://www.frontendmentor.io/solutions/qr-code-component-WEf-fvsmE6"
+    },
+    {
+        "img":"/mini/product-preview-card.png",
+        "title":"상품 소개 카드",
+        "desc":{
+            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
+            "point":"CSS Flex와 em, rem 단위 개념을 익혔습니다.",
+            "learned":"이 작업을 끝내고 처음으로 README.md를 작성하게 되어, 마크다운 문법이라는 것을 익히게 되었습니다."
+            },
+        "date":"2023.02.22",
+        "howlong":2,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","HTML","CSS","반응형"],
+        "tools":["HTML","CSS"],
+        "originLink":"",
+        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/product-preview-card-component-main/index.html",
+        "docu":"https://www.frontendmentor.io/solutions/product-previewcard-component-with-media-query-Cn_Yzfk9WS"
+    },
+    {
+        "img":"/mini/social-proof-section-master.png",
+        "title":"상품 추천사 섹션",
+        "desc":{
+            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.02.28",
+        "howlong":2,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","HTML","CSS","반응형"],
+        "tools":["HTML","CSS"],
+        "originLink":"",
+        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/social-proof-section-master/index.html",
+        "docu":"https://www.frontendmentor.io/solutions/social-proof-section-master-with-css-grid-vlovT_87gx"
+    },
+    {
+        "img":"/mini/article-preview-component-master.png",
+        "title":"기사 미리보기 컴포넌트",
+        "desc":{
+            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.03.13",
+        "howlong":3,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","HTML","CSS","JS","반응형"],
+        "tools":["HTML","CSS"],
+        "originLink":"",
+        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/article-preview-component-master/",
+        "docu":"https://www.frontendmentor.io/solutions/article-preview-component-solution-with-scss-X5T_1C4ldJ"
+    },
+    {
+        "img":"/mini/advice-generator-app.png",
+        "title":"랜덤 조언 생성 어플리케이션",
+        "desc":{
+            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.03.15",
+        "howlong":2,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","TailwindCss","Vue.js","서드파티 API","반응형"],
+        "tools":["TailwindCss","Vue.js","Adviceslip API"],
+        "originLink":"",
+        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/advice-generator-app/index.html",
+        "docu":"https://www.frontendmentor.io/solutions/advice-generator-vuejs-wH1ZFs-LT1"
+    }
+]}
