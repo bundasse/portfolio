@@ -28,7 +28,8 @@ export default {
     data() {
         return {
             fontStyle:"",
-            MenuIndex: 0,
+            MenuIndex: this.$store.state.MenuIndex,
+            selectIndex:0,
             ArrayList: [],
             lang:0,
         }
@@ -41,18 +42,28 @@ export default {
         FooterView
     },
     methods: {
-        // SectionMove(index :number){
-        // this.MenuIndex = index;
-        // const rect = this.ArrayList[this.MenuIndex].getBoundingClientRect();
-        // const offset = rect.top + window.scrollY;
-        // window.scrollTo({
-        //     top: offset,
-        //     behavior: 'smooth'
-        // })
-        // }
+        SectionMove(){
+            const rect = this.ArrayList[this.selectIndex].getBoundingClientRect();
+            const offset = rect.top + window.scrollY;
+            console.log(offset)
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            })
+        }
+    },
+    computed:{
+        indexChange:function(){
+            return this.$store.state.selectIndex
+        }
+    },
+    watch:{
+        indexChange(val){
+            this.selectIndex = val
+        }
     },
     mounted() {
-        // this.ArrayList = this.$refs;
+        this.ArrayList = this.$refs;
     }, 
 }
 </script>

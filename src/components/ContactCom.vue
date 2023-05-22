@@ -42,12 +42,13 @@ export default {
     width:100%;
     height:100vh;
 }
-form div{
+form>div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 600px;
-    margin-bottom: 10px;
+    margin: 50px 0 10px;
+    row-gap: 10px;
     .sec2{
         flex-basis: 49%;
         label{
@@ -60,6 +61,9 @@ form div{
         }
         input{
             width: 100%;
+            padding:0.5rem 0;
+            font-size: 1.2rem;
+            border:1px solid #cccccc;
         }
         
     }
@@ -73,7 +77,12 @@ form div{
                 color:lightgray;
             }
         }
-        textarea{width:100%;}
+        textarea{
+            width:100%;
+            padding:0.5rem 0;
+            font-size: 1.2rem;
+            border:1px solid #cccccc;
+        }
     }
 }
 @include title;

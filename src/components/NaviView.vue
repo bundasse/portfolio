@@ -1,8 +1,8 @@
 <template lang="">
     <nav class="naviWrap">
         <ul class="navi">
-            <li v-for="e in Navdata" :key="e">
-                <router-link to="/" class="naviObject">
+            <li v-for="(e,i) in Navdata" :key="i" :class="'section-'+i === this.$store.state.MenuIndex && 'on'">
+                <router-link to="/" @click="$store.commit('SectionMove','section-'+(i)); $store.state.selectIndex=i" class="naviObject">
                     <button class="btn_menu"></button><p class="side">{{e}}</p>
                 </router-link> 
             </li>
@@ -86,7 +86,7 @@ ul li .naviObject .side{
 .naviObject:hover .side{
   color: #90BF87;
 }
-/* ul li.on {
+ul li.on .side{
   color:#FF7F5B;
 }
 li.on .btn_menu{
@@ -95,5 +95,5 @@ li.on .btn_menu{
 }
 li.on .btn_menu:before{
   display: none;
-} */
+}
 </style>

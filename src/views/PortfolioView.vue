@@ -1,16 +1,16 @@
 <template>
     <div class="mainWrap">
-    뒤로가기
+    <button @click="$router.go(-1)" class="goback">뒤로가기</button>
         <div class="catenavi">
             <ul>
-                <li @click="$store.state.catename = '전체'">전체</li>
-                <li @click="$store.state.catename = '클론코딩'">클론코딩</li>
-                <li @click="$store.state.catename = '웹앱'">웹앱</li>
-                <li @click="$store.state.catename = '홈페이지'">홈페이지</li>
-                <li @click="$store.state.catename = '미니 프로젝트'">미니 프로젝트</li>
+                <li :class="$store.state.catename === '전체' && 'on'" @click="$store.state.catename = '전체'">전체</li>
+                <li :class="$store.state.catename === '클론코딩' && 'on'" @click="$store.state.catename = '클론코딩'">클론코딩</li>
+                <li :class="$store.state.catename === '웹앱' && 'on'" @click="$store.state.catename = '웹앱'">웹앱</li>
+                <li :class="$store.state.catename === '홈페이지' && 'on'" @click="$store.state.catename = '홈페이지'">홈페이지</li>
+                <li :class="$store.state.catename === '미니 프로젝트' && 'on'" @click="$store.state.catename = '미니 프로젝트'">미니 프로젝트</li>
             </ul>
         </div>
-        <div v-for="(e,index) in CateItem" :key="index" class="portitem">
+        <div v-for="(e,index) in CateItem" :key="index" class="portitem" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
             <img v-if="e.img !== ''" :src="require(`@/assets${e.img}`)" :alt="e.title">
             <div class="porttext">
                 <span class="portcate">{{ e.category }}</span>
@@ -20,7 +20,7 @@
                     <li v-for="el in e.keyword" :key="el"><span class="tagob">{{ el }}</span></li>
                 </ul>
                 <p class="tags">
-                    TOOLS: <span class="tagob" v-for="el2 in e.tools" :key="el2">{{ el2 }}</span>
+                    TOOLS: <span v-for="el2 in e.tools" :key="el2">[{{ el2 }}]</span>
                 </p>
                 <div class="desc">
                     <p v-for="el in e.desc" :key="el">{{ el }}</p>
@@ -35,6 +35,8 @@
     </div>
 </template>
 <script>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import data from "../assets/Data.json"
 export default {
     name:"PortfolioView",
@@ -53,22 +55,31 @@ export default {
                 }
             })
         }
-    }
+    },
+    created() {
+        window.scrollTo({top: 0, behavior: 'smooth'})
+        AOS.init();
+    },
 }
 </script>
 <style lang="scss">
 .mainWrap{flex:80%; margin:0; margin-left:250px; padding:0 2%; box-sizing: border-box;}
 .catenavi{
-    ul{display: flex; gap:20px;
+    ul{display: flex; gap:20px; font-size:1.2rem;
         li{
             padding: 0 15px;
             border: 1px solid #90BF87;
-            line-height: 1.8rem;
+            line-height: 2rem;
             cursor: pointer;
         }
         li:hover{
             background-color: #90BF87;
             color:white;
+        }
+        .on{
+            border: 1px solid #FF7F5B;
+            background-color: #FF7F5B;
+            color:white
         }
     }
 }
@@ -80,17 +91,16 @@ span{
     display: flex;
     flex-wrap:wrap;
     border:1px solid lightgray;
-    border-radius: 8px;
-    padding: 1%;
     margin-bottom: 3%;
     .portcate{
         color:#AAAAAA;
     }
     img{
         width: 55%;
-        height: 500px;
+        height: auto;
         object-fit: cover;
         object-position: top center;
+        border:10px solid #FF7F5B;
     }
     h3{
         margin:0;
@@ -98,7 +108,9 @@ span{
     }
     .porttext{
         width:40%;
-        margin-left: 3%;
+        box-sizing: border-box;
+        padding: 30px 10px;
+        margin-left: 10px;
     }
     .tags, .link{
         display: flex;
@@ -110,14 +122,14 @@ span{
         font-size: 1rem;
     }
     .tagob{
-        padding: 2px 12px;
+        padding: 2px 10px;
         line-height: 1.5rem;
         border: 1px solid #FF7F5B;
         border-radius: 15px;
         color: #666666;
     }
     .desc{
-        margin:28px 0;
+        margin:20px 0;
         font-size:14px;
         p{
             line-height: 1.5rem;
@@ -134,5 +146,15 @@ span{
     a:hover{
         background-color: #FF7F5B;
     }
+}
+.goback{
+    font-size:1.2rem;
+    padding:5px 10px;
+    border:0;
+    border-radius: 10px;
+}
+.goback:hover{
+    background-color: #FF7F5B;
+    color:white;
 }
 </style>

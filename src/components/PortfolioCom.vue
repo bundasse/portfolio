@@ -3,7 +3,7 @@
         <h2>포트폴리오 작업물</h2>
         <p class="subtext">Portfolio</p>
         <section>
-            <router-link to="/portfolio" v-for="e in catelist" :key="e" @click="this.$store.state.catename = e.title;"><article><h4>{{e.title}}</h4><p v-html="e.desc"></p></article></router-link>
+            <router-link to="/portfolio" v-for="e in catelist" :key="e" @click="this.$store.state.catename = e.title;" :style="`background-image: url('${e.img}')`"><article><h4>{{e.title}}</h4><p v-html="e.desc"></p></article></router-link>
         </section>
     </div>
 </template>
@@ -15,23 +15,29 @@ export default {
             catelist:[
                 {
                     title:"클론코딩",
-                    desc:"현재 서비스되고 있는 앱이나 웹사이트를 클론코딩한 것입니다.<br />배운 내용을 토대로 최대한 본래 사이트의 디자인과 레이아웃, 기능을 구현하고자 하였습니다."
+                    desc:"현재 서비스되고 있는 앱이나 웹사이트를 클론코딩한 것입니다.<br />배운 내용을 토대로 최대한 본래 사이트의 디자인과 레이아웃, 기능을 구현하고자 하였습니다.",
+                    img:'https://i.ibb.co/RQjDwTH/bg-clone.png'
                 },
                 {
                     title:"웹앱",
-                    desc:"택배 조회 시스템, 퀴즈 웹 어플리케이션 등 일반 홈페이지에 비해 특수한 기능을 목적으로 하는 웹 앱 형태의 사이트입니다.<br />서드파티 API나 라이브러리, 직접 짠 알고리즘을 통해 기능을 구현 하는데 중점을 두었습니다."
+                    desc:"택배 조회 시스템, 퀴즈 웹 어플리케이션 등 일반 홈페이지에 비해 특수한 기능을 목적으로 하는 웹 앱 형태의 사이트입니다.<br />서드파티 API나 라이브러리, 직접 짠 알고리즘을 통해 기능을 구현 하는데 중점을 두었습니다.",
+                    img:'https://i.ibb.co/QXwR8qZ/bg-webapp.png'
                 },             
                 {
                     title:"홈페이지",
-                    desc:"메인페이지만이 아닌 사이트 전체를 제작한 홈페이지입니다.<br />현재는 기업 홈페이지 템플릿과 포트폴리오 사이트가 작업물로 수록되어 있습니다. 템플릿 페이지의 경우 로그인, 회원가입, 게시판 등 Firebase를 활용한 기능에 주안을 두었습니다."
+                    desc:"메인페이지만이 아닌 사이트 전체를 제작한 홈페이지입니다.<br />현재는 기업 홈페이지 템플릿과 포트폴리오 사이트가 작업물로 수록되어 있습니다. 템플릿 페이지의 경우 로그인, 회원가입, 게시판 등 Firebase를 활용한 기능에 주안을 두었습니다.",
+                    img:'https://i.ibb.co/R4ZgnsC/bg-homepage.png'
                 },
                 {
                     title:"미니 프로젝트",
-                    desc:"단순한 기능이나 컴포넌트 레이아웃을 구현하는 것에 초점을 둔 자잘한 개인 작업물들입니다. 주로 Frontend Mentor 사이트의 챌린지 작업물이 있습니다."
+                    desc:"단순한 기능이나 컴포넌트 레이아웃을 구현하는 것에 초점을 둔 자잘한 개인 작업물들입니다. 주로 Frontend Mentor 사이트의 챌린지 작업물이 있습니다.",
+                    img:'https://i.ibb.co/88qz2JW/bg-mini.png'
                 },   
             ],
             cateselect:'전체'
         }
+    },
+    mounted() {
     },
     methods: {
     },
@@ -52,24 +58,25 @@ section{
     a{
         flex-basis: 23%;
         height: 500px;
-        padding: 30px 0;
-        background: #FF7F5B;
+        border: 1px solid #aaaaaa;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
         position: relative;
         overflow: hidden;
         &::after{
             position: absolute;
             content:'';
-            top:200px;
+            top:0;
             left:0;
             opacity: 0;
             width: 100%;
             height: 500px;
-            background: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0));
+            background: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0.5));
             transition: all 1s;
             z-index: 10;
         }
         &:hover::after{
-            top:100px;
             opacity: 1;
         }
         article{
@@ -91,6 +98,7 @@ section{
                 width: 90%;
                 margin: 0 auto;
                 font-size:1.2rem;
+                line-height: 1.8rem;
             }
         }
         &:hover article{
