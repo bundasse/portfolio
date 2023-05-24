@@ -10,7 +10,7 @@
                 <li :class="$store.state.catename === '미니 프로젝트' && 'on'" @click="$store.state.catename = '미니 프로젝트'">미니 프로젝트</li>
             </ul>
         </div>
-        <div v-for="(e,index) in CateItem" :key="index" class="portitem" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
+        <div v-for="(e,index) in CateItem" :key="index" class="portitem" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
             <img v-if="e.img !== ''" :src="require(`@/assets${e.img}`)" :alt="e.title">
             <div class="porttext">
                 <span class="portcate">{{ e.category }}</span>
@@ -26,9 +26,9 @@
                     <p v-for="el in e.desc" :key="el">{{ el }}</p>
                 </div>
                 <div class="link">
-                    <a :href="e.originLink" class="moveBtn">원본 사이트</a>
-                    <a :href="e.siteLink" class="moveBtn">구현 사이트</a>
-                    <a :href="e.docu" class="moveBtn">작업 관련 문서</a>
+                    <a v-if="e.originLink !== ''" :href="e.originLink" class="moveBtn">원본 사이트</a>
+                    <a v-if="e.siteLink !== ''" :href="e.siteLink" class="moveBtn">구현 사이트</a>
+                    <a v-if="e.docu !== ''" :href="e.docu" class="moveBtn">작업 관련 문서</a>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ export default {
     },
     computed:{
         CateItem(){
-            return this.Worklist.portlist.filter((e)=>{
+            return this.Worklist.portlist.slice().reverse().filter((e)=>{
                 if (this.$store.state.catename !== "전체"){
                     return e.category === this.$store.state.catename
                 }else{
@@ -69,6 +69,7 @@ export default {
         li{
             padding: 0 15px;
             border: 1px solid #90BF87;
+            border-radius: 5px;
             line-height: 2rem;
             cursor: pointer;
         }

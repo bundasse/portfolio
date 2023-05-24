@@ -21,7 +21,7 @@ export default {
 <style lang="scss">
 @import "@/styles/mixins.scss";
 .wrap{
-    padding:10% 0;
+    padding:10% 0 0 0;
     width:100%;
     height:100vh;
 }

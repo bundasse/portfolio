@@ -1,0 +1,42 @@
+[
+    {
+        "icon":"html5.svg",
+        "name":"HTML5",
+        "desc":"웹표준을 준수하며 시멘틱 마크업을 할 수 있습니다.<br/>자체적으로 웹페이지를 기획하거나 디자인할 때는 웹 접근성과 사용자 경험에 중점을 두고 있습니다."
+    },
+    {
+        "icon":"css3.svg",
+        "name":"CSS3",
+        "desc":"디자인에 충실하게 화면을 구현할 수 있습니다.CSS flex, CSS grid를 사용해 레이아웃을 만들 수 있으며 CSS 애니메이션을 사용할 수 있습니다. CSS 프레임워크인 tailwindcss를 사용할 수 있습니다."
+    },
+    {
+        "icon":"jquery.png",
+        "name":"jQquery",
+        "desc":"jQuery를 사용하여 DOM을 조작할 수 있습니다. 슬라이드, 모달창, 탭메뉴 등 기본적인 기능을 구현할 수 있습니다."
+
+    },
+    {
+        "icon":"javascript.svg",
+        "name":"JavaScript",
+        "desc":"ES6 문법에 익숙합니다. JavaScript로 DOM을 조작할 수 있습니다. 조건문, 반복문을 사용하거나 배열을 다루는 것을 잘 할 수 있습니다. 기본적인 구문들을 응용한 알고리즘을 짤 수 있습니다."
+
+    },
+    {
+        "icon":"sass.png",
+        "name":"SCSS",
+        "desc":"SCSS(Sass)를 사용하여 페이지를 구축할 수 있습니다. @mixin, @if, @for등을 사용해보았으며, Vue.js 프레임워크 내에서도 활용할 수 있습니다."
+
+    },
+    {
+        "icon":"typescript.png",
+        "name":"TypeScript",
+        "desc":"TypeScript의 기본 타입을 이해하고 있으며 함수의 타입 작성, 인터페이스, 유니언 타입 등의 개념을 이해하고 프로젝트에 적용할 수 있습니다."
+
+    },
+    {
+        "icon":"vuejs.svg",
+        "name":"Vue.js",
+        "desc":"Vue.js를 사용하여 웹애플리케이션을 구현할 수 있습니다.<br/>라우터, 컴포넌트 등 요소를 적절하게 활용하여 SPA(Single Page Application)을 제작했습니다.<br/>axios로 공공데이터 API를 활용할 수 있습니다. Firebase를 활용해 로그인, 인증, firestore를 이용한 간단한 데이터베이스(게시판 페이지) 구축을 할 수 있습니다."
+
+    }
+]

@@ -20,7 +20,7 @@
                 </div>
             </div>
         </form>
-        <button class="submit">전송</button>
+        <button class="submit" @click="mailTo()">전송</button>
     </div>
 </template>
 <script>
@@ -33,12 +33,17 @@ export default {
             cText:""
         }
     },
+    methods: {
+        mailTo(){
+            alert("!")
+        }
+    },
 }
 </script>
 <style lang="scss">
 @import "@/styles/mixins.scss";
 #contact{
-    padding:10% 0;
+    padding:5% 0;
     width:100%;
     height:100vh;
 }

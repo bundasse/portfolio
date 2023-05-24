@@ -46,7 +46,7 @@ export default {
 <style lang="scss">
 @import "@/styles/mixins.scss";
 #portfolio{
-    padding:10% 0;
+    padding:5% 0;
     width:100%;
     height:100vh;
 }

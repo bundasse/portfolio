@@ -1,8 +1,8 @@
 <template lang="">
     <nav class="naviWrap">
         <ul class="navi">
-            <li v-for="(e,i) in Navdata" :key="i" :class="'section-'+i === this.$store.state.MenuIndex && 'on'">
-                <router-link to="/" @click="$store.commit('SectionMove','section-'+(i)); $store.state.selectIndex=i" class="naviObject">
+            <li v-for="(e,i) in Navdata" :key="i" :class="i === this.$store.state.selectIndex && 'on'">
+                <router-link to="/" @click="$store.state.selectIndex = i;" class="naviObject">
                     <button class="btn_menu"></button><p class="side">{{e}}</p>
                 </router-link> 
             </li>
@@ -19,8 +19,8 @@ export default {
     },    
 }
 </script>
-<style lang="scss">
-.naviWrap{margin-top:50px; display: block; position: fixed; left:0;}
+<style scoped lang="scss">
+.naviWrap{flex:20%; margin-top:50px; display: block; position: fixed; left:0;}
 .navi{
   display: flex;
   flex-direction: column;

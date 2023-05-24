@@ -17,6 +17,23 @@
         "docu":""
     },
     {
+        "img":"/mini/QRcode-component.png",
+        "title":"QR코드 컴포넌트",
+        "desc":{
+            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.01.21",
+        "howlong":1,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","HTML","CSS","반응형"],
+        "tools":["HTML","CSS"],
+        "originLink":"",
+        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/QRcode-component/index.html",
+        "docu":"https://www.frontendmentor.io/solutions/qr-code-component-WEf-fvsmE6"
+    },
+    {
         "img":"/clone/cgv.png",
         "title":"CGV 메인 페이지 클론코딩",
         "desc":{
@@ -32,6 +49,23 @@
         "originLink":"https://www.cgv.co.kr/",
         "siteLink":"https://bundasse.github.io/clone_cgv/",
         "docu":""
+    },
+    {
+        "img":"/mini/product-preview-card.png",
+        "title":"상품 소개 카드",
+        "desc":{
+            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
+            "point":"CSS Flex와 em, rem 단위 개념을 익혔습니다.",
+            "learned":"이 작업을 끝내고 처음으로 README.md를 작성하게 되어, 마크다운 문법이라는 것을 익히게 되었습니다."
+            },
+        "date":"2023.02.22",
+        "howlong":2,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","HTML","CSS","반응형"],
+        "tools":["HTML","CSS"],
+        "originLink":"",
+        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/product-preview-card-component-main/index.html",
+        "docu":"https://www.frontendmentor.io/solutions/product-previewcard-component-with-media-query-Cn_Yzfk9WS"
     },
     {
         "img":"/clone/todomate.png",
@@ -51,6 +85,23 @@
         "docu":""
     },
     {
+        "img":"/mini/social-proof-section-master.png",
+        "title":"상품 추천사 섹션",
+        "desc":{
+            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.02.28",
+        "howlong":2,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","HTML","CSS","반응형"],
+        "tools":["HTML","CSS"],
+        "originLink":"",
+        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/social-proof-section-master/index.html",
+        "docu":"https://www.frontendmentor.io/solutions/social-proof-section-master-with-css-grid-vlovT_87gx"
+    },
+    {
         "img":"/webapp/festival.png",
         "title":"부산 축제정보 공공데이터 기반 웹앱",
         "desc":{
@@ -63,23 +114,6 @@
         "category":"웹앱",
         "keyword":["웹앱","Vue.js","TailwindCss","공공데이터 API","반응형"],
         "tools":["Vue.js","TailwindCss","공공데이터 API"],
-        "originLink":"",
-        "siteLink":"",
-        "docu":""
-    },
-    {
-        "img":"/webapp/parcel.png",
-        "title":"택배 배송현황 조회 웹앱",
-        "desc":{
-            "desc":"",
-            "point":"",
-            "learned":""
-            },
-        "date":"2023.03.14",
-        "howlong":2,
-        "category":"웹앱",
-        "keyword":["웹앱","Vue.js","TailwindCss","서드파티 API","반응형"],
-        "tools":["Vue.js","TailwindCss","택배조회 API"],
         "originLink":"",
         "siteLink":"",
         "docu":""
@@ -119,21 +153,55 @@
         "docu":""
     },
     {
-        "img":"/clone/waterworks.png",
-        "title":"대구상수도사업본부 메인 페이지 클론코딩",
+        "img":"/mini/article-preview-component-master.png",
+        "title":"기사 미리보기 컴포넌트",
+        "desc":{
+            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.03.13",
+        "howlong":3,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","HTML","CSS","JS","반응형"],
+        "tools":["HTML","CSS"],
+        "originLink":"",
+        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/article-preview-component-master/",
+        "docu":"https://www.frontendmentor.io/solutions/article-preview-component-solution-with-scss-X5T_1C4ldJ"
+    },
+    {
+        "img":"/webapp/parcel.png",
+        "title":"택배 배송현황 조회 웹앱",
         "desc":{
             "desc":"",
             "point":"",
             "learned":""
             },
-        "date":"",
-        "howlong":7,
-        "category":"클론코딩",
-        "keyword":["클론코딩","Vue.js","TailwindCss","반응형"],
-        "tools":["Vue.js","TailwindCss"],
+        "date":"2023.03.14",
+        "howlong":2,
+        "category":"웹앱",
+        "keyword":["웹앱","Vue.js","TailwindCss","서드파티 API","반응형"],
+        "tools":["Vue.js","TailwindCss","택배조회 API"],
         "originLink":"",
         "siteLink":"",
         "docu":""
+    },
+    {
+        "img":"/mini/advice-generator-app.png",
+        "title":"랜덤 조언 생성 어플리케이션",
+        "desc":{
+            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.03.15",
+        "howlong":2,
+        "category":"미니 프로젝트",
+        "keyword":["미니 프로젝트","TailwindCss","Vue.js","서드파티 API","반응형"],
+        "tools":["TailwindCss","Vue.js","Adviceslip API"],
+        "originLink":"",
+        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/advice-generator-app/index.html",
+        "docu":"https://www.frontendmentor.io/solutions/advice-generator-vuejs-wH1ZFs-LT1"
     },
     {
         "img":"/webapp/quiz.png",
@@ -147,6 +215,23 @@
         "howlong":2,
         "category":"웹앱",
         "keyword":["웹앱","Vue.js","TailwindCss","반응형"],
+        "tools":["Vue.js","TailwindCss"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"/clone/waterworks.png",
+        "title":"대구상수도사업본부 메인 페이지 클론코딩",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.04.11",
+        "howlong":7,
+        "category":"클론코딩",
+        "keyword":["클론코딩","Vue.js","TailwindCss","반응형"],
         "tools":["Vue.js","TailwindCss"],
         "originLink":"",
         "siteLink":"",
@@ -177,7 +262,7 @@
             "point":"",
             "learned":""
             },
-        "date":"",
+        "date":"2023.05.10",
         "howlong":10,
         "category":"클론코딩",
         "keyword":["클론코딩","Vue.js","TailwindCss","반응형"],
@@ -205,6 +290,23 @@
     },
     {
         "img":"",
+        "title":"제철농산물 레시피 플랫폼 농달",
+        "desc":{
+            "desc":"",
+            "point":"",
+            "learned":""
+            },
+        "date":"2023.05.23",
+        "howlong":8,
+        "category":"홈페이지",
+        "keyword":["홈페이지","기획","TailwindCss","Vue.js","공공데이터 API","Firebase","DB","반응형"],
+        "tools":["TailwindCss","Vue.js","공공데이터 API","Firebase"],
+        "originLink":"",
+        "siteLink":"",
+        "docu":""
+    },
+    {
+        "img":"",
         "title":"포트폴리오 페이지",
         "desc":{
             "desc":"",
@@ -219,107 +321,5 @@
         "originLink":"",
         "siteLink":"",
         "docu":""
-    },
-    {
-        "img":"",
-        "title":"",
-        "desc":{
-            "desc":"",
-            "point":"",
-            "learned":""
-            },
-        "date":"",
-        "howlong":14,
-        "category":"홈페이지",
-        "keyword":["홈페이지","기획","TailwindCss","Vue.js","공공데이터 API","Firebase","DB","반응형"],
-        "tools":["TailwindCss","Vue.js","공공데이터 API","Firebase"],
-        "originLink":"",
-        "siteLink":"",
-        "docu":""
-    },
-    {
-        "img":"/mini/QRcode-component.png",
-        "title":"QR코드 컴포넌트",
-        "desc":{
-            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
-            "point":"",
-            "learned":""
-            },
-        "date":"2023.01.21",
-        "howlong":1,
-        "category":"미니 프로젝트",
-        "keyword":["미니 프로젝트","HTML","CSS","반응형"],
-        "tools":["HTML","CSS"],
-        "originLink":"",
-        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/QRcode-component/index.html",
-        "docu":"https://www.frontendmentor.io/solutions/qr-code-component-WEf-fvsmE6"
-    },
-    {
-        "img":"/mini/product-preview-card.png",
-        "title":"상품 소개 카드",
-        "desc":{
-            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
-            "point":"CSS Flex와 em, rem 단위 개념을 익혔습니다.",
-            "learned":"이 작업을 끝내고 처음으로 README.md를 작성하게 되어, 마크다운 문법이라는 것을 익히게 되었습니다."
-            },
-        "date":"2023.02.22",
-        "howlong":2,
-        "category":"미니 프로젝트",
-        "keyword":["미니 프로젝트","HTML","CSS","반응형"],
-        "tools":["HTML","CSS"],
-        "originLink":"",
-        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/product-preview-card-component-main/index.html",
-        "docu":"https://www.frontendmentor.io/solutions/product-previewcard-component-with-media-query-Cn_Yzfk9WS"
-    },
-    {
-        "img":"/mini/social-proof-section-master.png",
-        "title":"상품 추천사 섹션",
-        "desc":{
-            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
-            "point":"",
-            "learned":""
-            },
-        "date":"2023.02.28",
-        "howlong":2,
-        "category":"미니 프로젝트",
-        "keyword":["미니 프로젝트","HTML","CSS","반응형"],
-        "tools":["HTML","CSS"],
-        "originLink":"",
-        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/social-proof-section-master/index.html",
-        "docu":"https://www.frontendmentor.io/solutions/social-proof-section-master-with-css-grid-vlovT_87gx"
-    },
-    {
-        "img":"/mini/article-preview-component-master.png",
-        "title":"기사 미리보기 컴포넌트",
-        "desc":{
-            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
-            "point":"",
-            "learned":""
-            },
-        "date":"2023.03.13",
-        "howlong":3,
-        "category":"미니 프로젝트",
-        "keyword":["미니 프로젝트","HTML","CSS","JS","반응형"],
-        "tools":["HTML","CSS"],
-        "originLink":"",
-        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/article-preview-component-master/",
-        "docu":"https://www.frontendmentor.io/solutions/article-preview-component-solution-with-scss-X5T_1C4ldJ"
-    },
-    {
-        "img":"/mini/advice-generator-app.png",
-        "title":"랜덤 조언 생성 어플리케이션",
-        "desc":{
-            "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
-            "point":"",
-            "learned":""
-            },
-        "date":"2023.03.15",
-        "howlong":2,
-        "category":"미니 프로젝트",
-        "keyword":["미니 프로젝트","TailwindCss","Vue.js","서드파티 API","반응형"],
-        "tools":["TailwindCss","Vue.js","Adviceslip API"],
-        "originLink":"",
-        "siteLink":"https://bundasse.github.io/Frontend-Mentor-Solutions/advice-generator-app/index.html",
-        "docu":"https://www.frontendmentor.io/solutions/advice-generator-vuejs-wH1ZFs-LT1"
     }
 ]}
