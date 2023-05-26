@@ -25,7 +25,7 @@ export default {
                 },             
                 {
                     title:"홈페이지",
-                    desc:"메인페이지만이 아닌 사이트 전체를 제작한 홈페이지입니다.<br />현재는 기업 홈페이지 템플릿과 포트폴리오 사이트가 작업물로 수록되어 있습니다. 템플릿 페이지의 경우 로그인, 회원가입, 게시판 등 Firebase를 활용한 기능에 주안을 두었습니다.",
+                    desc:"메인 페이지 만이 아닌 사이트 전체를 제작한 홈페이지입니다.<br />현재는 기업 홈페이지 템플릿과 포트폴리오 사이트가 작업물로 수록되어 있습니다. 템플릿 페이지의 경우 로그인, 회원가입, 게시판 등 Firebase를 활용한 기능에 주안을 두었습니다.",
                     img:'https://i.ibb.co/R4ZgnsC/bg-homepage.png'
                 },
                 {
@@ -47,16 +47,16 @@ export default {
 @import "@/styles/mixins.scss";
 #portfolio{
     padding:5% 0;
-    width:100%;
+    width:90%;
     height:100vh;
 }
 @include title;
 section{
     display:flex;
     margin-top: 30px;
-    justify-content: space-between;
+    justify-content: space-around;
     a{
-        flex-basis: 23%;
+        flex-basis: 22%;
         height: 500px;
         border: 1px solid #aaaaaa;
         background-size: cover;

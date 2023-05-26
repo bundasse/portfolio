@@ -1,21 +1,35 @@
 <template>
     <div class="wrap">
         <div>
-            <div>
-                <h2>타이틀 한마디</h2>
-                <p class="subtext">Front-end developer</p>
-                <p>
-                    누구나 쉽게 쓸 수 있는 웹을 만들고 싶은<br/>
-                    프론트엔드 개발자 조영민입니다.
-                </p>
-            </div>
+            <h2>함께 성장하는 프론트엔드 개발자</h2>
+            <p class="subtext">Front-end developer</p>
+            <p>
+                누구나 쉽게 쓸 수 있는 웹을 만들고 싶은,<br/>
+                교류와 소통으로 레벨 업 하는,
+                <br/>
+                프론트엔드 개발자 조영민입니다.
+            </p>
+            <ul class="link">
+                <li v-for="(e,i) in link" :key="e"  @mouseenter="mouseOn=true; selecti=i" @mouseleave="mouseOn = false;selecti=null"><a :href="e.link"><img :src="mouseOn ===true && selecti ===i? require(`@/assets/icons/${e.icon}_on.png`):require(`@/assets/icons/${e.icon}.png`)" :alt="e.alt"/></a></li>
+            </ul>
         </div>
-        <button class="submit">연락처로 바로가기</button>
+        <button class="submit" @click="$store.state.selectIndex = 3">연락처로 바로가기</button>
     </div>
 </template>
 <script>
 export default {
-    name: "TitleCom"
+    name: "TitleCom",
+    data() {
+        return {
+            selecti:null,
+            mouseOn:false,
+            link:[
+                {icon:"ico_github",link:"https://github.com/bundasse", alt:"GitHub"},
+                {icon:"ico_tistory",link:"https://bundasse.tistory.com/",alt:"Tistory"},
+                {icon:"ico_codepen",link:"#",alt:"Codepen"}
+            ]
+        }
+    },
 }
 </script>
 <style lang="scss">
@@ -23,16 +37,27 @@ export default {
 .wrap{
     padding:10% 0 0 0;
     width:100%;
-    height:100vh;
+    height:80vh;
 }
-.wrap>div{
-    display: flex;
-    height: 30%;
-}
-.wrap>div div{
-    flex-basis: 40%;
+.link{
+    display:flex;
+    margin:0;
+    padding:0;
+    margin-top:30px;
+    height:80px;
+    gap:2rem;
+    li{
+        transition: all 0.3s;
+        img{
+            width:50px;
+            height:50px;
+        }
+    }
+    li:hover{
+        margin-top:10px;
+    }
 }
 @include title;
 p{font-size: 1.2em}
-@include buttons(0);
+@include buttons(250px);
 </style>

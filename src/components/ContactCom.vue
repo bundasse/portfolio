@@ -43,9 +43,10 @@ export default {
 <style lang="scss">
 @import "@/styles/mixins.scss";
 #contact{
-    padding:5% 0;
+    padding:3% 0;
     width:100%;
-    height:100vh;
+    height:80vh;
+    box-sizing: border-box;
 }
 form>div{
     display: flex;

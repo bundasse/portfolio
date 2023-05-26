@@ -11,7 +11,8 @@ export default {
 <style scoped>
     .footerWrap{
         width:100%;
-        padding: 3em 2%;
-        background-color: #eee;
+        padding: 3em 0 3em 2% ;
+        box-sizing: border-box;
+        background-color: #e3f5e6;
     }
 </style>

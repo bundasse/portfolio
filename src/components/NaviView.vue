@@ -20,26 +20,24 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.naviWrap{flex:20%; margin-top:50px; display: block; position: fixed; left:0;}
+.naviWrap{margin:0; padding:0; margin-top:50px; display: block; position: fixed; left:0;}
 .navi{
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  list-style: none;
   width: 50px;
-  height: 500px;
+  list-style: none;
   overflow: hidden;
-  transition:all 0.3s;
+  transition:all 0.5s;
   &:hover{width:200px;}
 }
 ul li{
   border-radius: 15px;
-  line-height: 45px;
+  line-height: 40px;
 }
 ul li .naviObject{
   display: block;
   position: relative;
-  padding: 10px
+  padding: 10px 0;
 }
 .btn_menu {
   display: block;

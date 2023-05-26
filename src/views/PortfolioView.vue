@@ -1,6 +1,8 @@
 <template>
     <div class="mainWrap">
-    <button @click="$router.go(-1)" class="goback">뒤로가기</button>
+        <div class="goback">
+            <button @click="$router.go(-1)">&#8636; <span>뒤로가기</span></button>
+        </div>
         <div class="catenavi">
             <ul>
                 <li :class="$store.state.catename === '전체' && 'on'" @click="$store.state.catename = '전체'">전체</li>
@@ -10,7 +12,7 @@
                 <li :class="$store.state.catename === '미니 프로젝트' && 'on'" @click="$store.state.catename = '미니 프로젝트'">미니 프로젝트</li>
             </ul>
         </div>
-        <div v-for="(e,index) in CateItem" :key="index" class="portitem" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
+        <div v-for="(e,index) in CateItem" :key="index" class="portitem">
             <img v-if="e.img !== ''" :src="require(`@/assets${e.img}`)" :alt="e.title">
             <div class="porttext">
                 <span class="portcate">{{ e.category }}</span>
@@ -26,9 +28,9 @@
                     <p v-for="el in e.desc" :key="el">{{ el }}</p>
                 </div>
                 <div class="link">
-                    <a v-if="e.originLink !== ''" :href="e.originLink" class="moveBtn">원본 사이트</a>
-                    <a v-if="e.siteLink !== ''" :href="e.siteLink" class="moveBtn">구현 사이트</a>
-                    <a v-if="e.docu !== ''" :href="e.docu" class="moveBtn">작업 관련 문서</a>
+                    <a v-if="e.originLink !== ''" :href="e.originLink" target="_blank" class="moveBtn">원본 사이트</a>
+                    <a v-if="e.siteLink !== ''" :href="e.siteLink" target="_blank" class="moveBtn">구현 사이트</a>
+                    <a v-if="e.docu !== ''" :href="e.docu" target="_blank" class="moveBtn">작업 관련 문서</a>
                 </div>
             </div>
         </div>
@@ -62,10 +64,10 @@ export default {
     },
 }
 </script>
-<style lang="scss">
-.mainWrap{flex:80%; margin:0; margin-left:250px; padding:0 2%; box-sizing: border-box;}
+<style lang="scss" scoped>
+.mainWrap{flex:80%; margin:0; padding:0; margin-left:280px; box-sizing: border-box;}
 .catenavi{
-    ul{display: flex; gap:20px; font-size:1.2rem;
+    ul{display: flex; gap:20px; font-size:1.2rem; margin-left:2%;
         li{
             padding: 0 15px;
             border: 1px solid #90BF87;
@@ -89,10 +91,12 @@ span{
 }
 .portitem{
     width: 90%;
+    margin:0 2% 3% 2%; 
     display: flex;
     flex-wrap:wrap;
-    border:1px solid lightgray;
-    margin-bottom: 3%;
+    border:1px solid #777;
+    border-radius: 10px;
+    padding:20px;
     .portcate{
         color:#AAAAAA;
     }
@@ -101,7 +105,7 @@ span{
         height: auto;
         object-fit: cover;
         object-position: top center;
-        border:10px solid #FF7F5B;
+        border:1px solid #ddd;
     }
     h3{
         margin:0;
@@ -149,13 +153,38 @@ span{
     }
 }
 .goback{
-    font-size:1.2rem;
-    padding:5px 10px;
-    border:0;
-    border-radius: 10px;
-}
-.goback:hover{
-    background-color: #FF7F5B;
-    color:white;
+    background: #FF7F5B;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    button{
+        font-size:5rem;
+        padding:5px 10px;
+        border:0;
+        background:transparent;
+        position:relative;
+        color:white;
+        z-index: 5;
+        transition: all 1s;
+        span{
+            color:#FF7F5B;
+            font-size:5rem;
+        }
+        &::before{
+            content:'';
+            position:absolute;
+            top:0; right:0; bottom:0; left:0px;
+            z-index: -1;
+            background:white;
+            transform:skew(-45deg);
+            opacity: 0;
+        }
+    }
+    button:hover{
+        padding-right:100px;
+        color: #FF7F5B;
+        &::before{
+            opacity:1
+        }
+    }
 }
 </style>
