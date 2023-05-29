@@ -5,7 +5,7 @@
             <p class="subtext">Front-end developer</p>
             <p>
                 누구나 쉽게 쓸 수 있는 웹을 만들고 싶은,<br/>
-                교류와 소통으로 레벨 업 하는,
+                교류와 소통으로 레벨 업 하는
                 <br/>
                 프론트엔드 개발자 조영민입니다.
             </p>
@@ -13,7 +13,7 @@
                 <li v-for="(e,i) in link" :key="e"  @mouseenter="mouseOn=true; selecti=i" @mouseleave="mouseOn = false;selecti=null"><a :href="e.link"><img :src="mouseOn ===true && selecti ===i? require(`@/assets/icons/${e.icon}_on.png`):require(`@/assets/icons/${e.icon}.png`)" :alt="e.alt"/></a></li>
             </ul>
         </div>
-        <button class="submit" @click="$store.state.selectIndex = 3">연락처로 바로가기</button>
+        <button class="submit" @click="$store.state.selectIndex = 3">메일 보내러 바로가기</button>
     </div>
 </template>
 <script>
@@ -37,7 +37,8 @@ export default {
 .wrap{
     padding:10% 0 0 0;
     width:100%;
-    height:80vh;
+    min-height: 100vh;
+    height:100%;
 }
 .link{
     display:flex;

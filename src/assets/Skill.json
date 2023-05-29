@@ -7,7 +7,7 @@
     {
         "icon":"css3.svg",
         "name":"CSS3",
-        "desc":"디자인에 충실하게 화면을 구현할 수 있습니다.CSS flex, CSS grid를 사용해 레이아웃을 만들 수 있으며 CSS 애니메이션을 사용할 수 있습니다. CSS 프레임워크인 tailwindcss를 사용할 수 있습니다."
+        "desc":"디자인에 충실하게 화면을 구현할 수 있습니다.CSS Flex, CSS Grid를 사용해 레이아웃을 만들 수 있으며 CSS 애니메이션을 사용할 수 있습니다. CSS 프레임워크인 Tailwind CSS를 사용할 수 있습니다."
     },
     {
         "icon":"jquery.png",

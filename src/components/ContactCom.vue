@@ -2,41 +2,49 @@
     <div id="contact">
         <h2>연락하기</h2>
         <p class="subtext">Contact</p>
-        <p>제 이야기가 좀 더 듣고싶거나,<br/>
-하고싶은 이야기가 있다면 편하게 연락해주세요!</p>
-        <form action="">
+        <p>제 이야기가 좀 더 듣고 싶거나,<br/>
+하고 싶은 이야기가 있다면 편하게 연락해주세요!</p>
+        <form ref="form" @submit.prevent="sendEmail">
             <div>
                 <div class="sec2">
-                    <label for="cName">이름<span>Name</span></label>
-                    <input type="text" v-model="cName" id="cName">
+                    <label for="user_name">이름<span>Name</span></label>
+                    <input type="text" name="name" id="user_name" required>
                 </div>
                 <div class="sec2">
-                    <label for="cMail">메일 주소<span>E-mail address</span></label>
-                    <input type="text" v-model="cMail" id="cMail">
+                    <label for="user_email">메일 주소<span>E-mail address</span></label>
+                    <input type="text" name="email" id="user_email" required>
                 </div>
                 <div class="sec1">
-                    <label for="cText">메세지 내용<span>Message</span></label>
-                    <textarea id="cText" v-model="cText"></textarea>
+                    <label for="message">메세지 내용<span>Message</span></label>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
             </div>
+        <p :style="mailSuccess === true? 'display:block':'display:none'" class="reply">메시지가 성공적으로 전송되었습니다. 1~2일 이내에 확인 후 답변드리겠습니다.</p>
+        <button class="submit">전송</button>
         </form>
-        <button class="submit" @click="mailTo()">전송</button>
     </div>
 </template>
 <script>
+import emailjs from '@emailjs/browser';
 export default {
     name:"ContactCom",
     data() {
         return {
-            cName:"",
-            cMail:"",
-            cText:""
+            mailSuccess:false
         }
     },
     methods: {
-        mailTo(){
-            alert("!")
-        }
+        sendEmail() {
+          emailjs.sendForm('service_hsa8g5f', 'template_f150vie', this.$refs.form, 'O6tORrpyEOpeDORY1')
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+            this.mailSuccess = true
+
+        }, (error) => {
+            console.log('FAILED...', error.text);
+            alert("메일 전송에 실패했습니다.")
+        });
+    }
     },
 }
 </script>
@@ -45,7 +53,8 @@ export default {
 #contact{
     padding:3% 0;
     width:100%;
-    height:80vh;
+    min-height: 100vh;
+    height:100%;
     box-sizing: border-box;
 }
 form>div{
@@ -90,6 +99,9 @@ form>div{
             border:1px solid #cccccc;
         }
     }
+}
+.reply{
+    color:#FF7F5B;
 }
 @include title;
 @include buttons(250px);

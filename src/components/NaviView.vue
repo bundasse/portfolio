@@ -44,7 +44,7 @@ ul li .naviObject{
   position: relative;
   height: 25px;
   width: 25px;
-  border: 1px #90BF87 solid;
+  border: 2px #90BF87 solid;
   border-radius: 50%;
   outline: 0;
   overflow:hidden;
@@ -60,7 +60,7 @@ ul li .naviObject{
     content: "";
     position: absolute;
     background: #90BF87;
-    border: 1px #90BF87 solid;
+    border: 2px #90BF87 solid;
     bottom: 0;
     left: 0;
     right: 0;
@@ -88,7 +88,7 @@ ul li.on .side{
   color:#FF7F5B;
 }
 li.on .btn_menu{
-  border: 1px #FF7F5B solid;
+  border: 2px #FF7F5B solid;
   background: #FF7F5B;
 }
 li.on .btn_menu:before{
