@@ -10,7 +10,7 @@
                     <p class="skilldesc" v-html="e.desc"></p>
                 </div>
             </li>
-        </ul>
+        </ul>     
     </div>
 </template>
 <script>

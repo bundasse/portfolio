@@ -19,7 +19,7 @@
                 <h3>{{ e.title }}</h3>
                 <p class="days">{{ e.date }} / {{ e.howlong }}일</p>
                 <ul class="tags">
-                    <li v-for="el in e.keyword" :key="el"><span class="tagob">{{ el }}</span></li>
+                    <li v-for="el in e.keyword" :key="el"><span class="tagob">#{{ el }}</span></li>
                 </ul>
                 <p class="tags">
                     TOOLS: <span v-for="el2 in e.tools" :key="el2">[{{ el2 }}]</span>
@@ -67,7 +67,7 @@ export default {
 <style lang="scss" scoped>
 .mainWrap{flex:80%; margin:0; padding:0; margin-left:280px; box-sizing: border-box;}
 .catenavi{
-    ul{display: flex; gap:20px; font-size:1.2rem; margin-left:2%;
+    ul{display: flex; gap:20px; font-size:1.2rem;
         li{
             padding: 0 15px;
             border: 1px solid #90BF87;
@@ -91,7 +91,7 @@ span{
 }
 .portitem{
     width: 90%;
-    margin:0 2% 3% 2%; 
+    margin:0 2% 3% 40px; 
     display: flex;
     flex-wrap:wrap;
     border:1px solid #777;

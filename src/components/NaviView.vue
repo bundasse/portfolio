@@ -24,11 +24,10 @@ export default {
 .navi{
   display: flex;
   flex-direction: column;
-  width: 50px;
+  width: 200px;
   list-style: none;
   overflow: hidden;
   transition:all 0.5s;
-  &:hover{width:200px;}
 }
 ul li{
   border-radius: 15px;

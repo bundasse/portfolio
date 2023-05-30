@@ -53,7 +53,7 @@ export default {
 #contact{
     padding:3% 0;
     width:100%;
-    min-height: 100vh;
+    min-height: 85vh;
     height:100%;
     box-sizing: border-box;
 }

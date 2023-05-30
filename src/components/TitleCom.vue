@@ -12,7 +12,7 @@
                 <li v-for="(e,i) in link" :key="e"  @mouseenter="mouseOn=true; selecti=i" @mouseleave="mouseOn = false;selecti=null"><a :href="e.link"><img :src="mouseOn ===true && selecti ===i? require(`@/assets/icons/${e.icon}_on.png`):require(`@/assets/icons/${e.icon}.png`)" :alt="e.alt"/></a></li>
             </ul>
         </div>
-        <button class="submit" @click="$store.state.selectIndex = 3">메일 보내러 바로가기</button>
+        <button class="submit" @click="$store.state.selectIndex = 3">메일 바로가기</button>
     </div>
 </template>
 <script>
@@ -25,7 +25,7 @@ export default {
             link:[
                 {icon:"ico_github",link:"https://github.com/bundasse", alt:"GitHub"},
                 {icon:"ico_tistory",link:"https://bundasse.tistory.com/",alt:"Tistory"},
-                {icon:"ico_codepen",link:"#",alt:"Codepen"}
+                {icon:"ico_notion",link:"https://admitted-angle-505.notion.site/246f1b4d37d04595894ebd3670ad2d65",alt:"Notion"}
             ]
         }
     },
@@ -39,7 +39,7 @@ export default {
     min-height: 100vh;
     height:100%;
     box-sizing: border-box;
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 .link{
     display:flex;
