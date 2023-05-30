@@ -5,8 +5,7 @@
             <p class="subtext">Front-end developer</p>
             <p>
                 누구나 쉽게 쓸 수 있는 웹을 만들고 싶은,<br/>
-                교류와 소통으로 레벨 업 하는
-                <br/>
+                교류와 소통으로 레벨업 하는<br/>
                 프론트엔드 개발자 조영민입니다.
             </p>
             <ul class="link">
@@ -39,6 +38,8 @@ export default {
     width:100%;
     min-height: 100vh;
     height:100%;
+    box-sizing: border-box;
+    line-height: 2rem;
 }
 .link{
     display:flex;

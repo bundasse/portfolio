@@ -33,7 +33,7 @@ export default {
 @import "@/styles/mixins.scss";
 #skill{
     padding:5% 0 10% 0;
-    width:100%;
+    width:90%;
     min-height: 100vh;
     height:100%;
 }
