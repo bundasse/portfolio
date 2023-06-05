@@ -106,8 +106,8 @@
         "title":"부산 축제정보 공공데이터 기반 웹앱",
         "desc":{
             "desc":"Vue.js를 처음으로 사용해 만든 프로젝트입니다.",
-            "point":"axios를 활용하여 공공데이터 API를 화면에 출력하는 법을 익혔습니다. Vue.js의 v-for를 이용한 리스트 렌더링을 하였으며 component, router의 기본을 알게 되었습니다.",
-            "learned":"Vue.js의 v-for를 이용한 리스트 렌더링 기능을 알게 된 것이 가장 큰 깨달음이었습니다. 이후로 화면에 비슷한 요소가 반복출력되는 경우 데이터와 코드를 분리하여 리스트 렌더링을 사용해 반복되는 코드를 줄일 수 있게 되었습니다. 또 axios를 이용해 공공데이터 API를 get하는 방법과 Tailwind CSS의 설치 및 사용법을 알게 되었습니다."
+            "point":"Axios를 활용하여 공공데이터 API를 화면에 출력하는 법을 익혔습니다. Vue.js의 v-for를 이용한 리스트 렌더링을 하였으며 component, router의 기본을 알게 되었습니다.",
+            "learned":"Vue.js의 v-for를 이용한 리스트 렌더링 기능을 알게 된 것이 가장 큰 깨달음이었습니다. 이후로 화면에 비슷한 요소가 반복출력되는 경우 데이터와 코드를 분리하여 리스트 렌더링을 사용해 반복되는 코드를 줄일 수 있게 되었습니다. 또 Axios를 이용해 공공데이터 API를 get하는 방법과 Tailwind CSS의 설치 및 사용법을 알게 되었습니다."
             },
         "date":"2023.03.09",
         "howlong":7,
@@ -191,8 +191,8 @@
         "title":"랜덤 조언 생성 어플리케이션",
         "desc":{
             "desc":"Frontend Mentor의 챌린지 중 하나를 도전한 것입니다.",
-            "point":"",
-            "learned":""
+            "point":"서드파티 API를 이용하는 방법을 다시 한 번 복습했습니다.",
+            "learned":"해당 어플리케이션을 제작하는 과정에서 Tailwind CSS 색상, 폰트를 커스텀하는 방법을 공부했습니다."
             },
         "date":"2023.03.15",
         "howlong":2,
@@ -302,7 +302,7 @@
         "keyword":["홈페이지","기획","Tailwind CSS","Vue.js","공공데이터 API","Firebase","DB","반응형"],
         "tools":["Tailwind CSS","Vue.js","공공데이터 API","Firebase"],
         "originLink":"",
-        "siteLink":"https://food-two-pi.vercel.app/",
+        "siteLink":"https://nongdal.vercel.app/",
         "docu":"https://drive.google.com/file/d/1R6bEioVOZTk5mGuYHEaAbm2RFdy09Zht/view?usp=sharing"
     },
     {
@@ -316,7 +316,7 @@
         "date":"2023.05.26",
         "howlong":14,
         "category":"홈페이지",
-        "keyword":["홈페이지","기획","디자인","SCSS","Vue.js"],
+        "keyword":["홈페이지","기획","디자인","SCSS","Vue.js","반응형"],
         "tools":["SCSS","Vue.js"],
         "originLink":"",
         "siteLink":"http://bundasse.dothome.co.kr/portfolio",

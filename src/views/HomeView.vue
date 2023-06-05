@@ -13,7 +13,8 @@
             <ContactCom/>
         </div>
         <FooterView />
-        <div class="bg"></div>
+        <div class="bg">
+        </div>
     </div>
 </template>
 
@@ -40,14 +41,12 @@ export default {
         ContactCom,
         FooterView
     },
-    methods: {
-    },
     computed: {
         sectionMove() {
         return this.$store.state.selectIndex
         },
     },
-  watch: {
+    watch: {
         sectionMove() {
             let rect = this.ArrayList[`section-${[this.$store.state.selectIndex]}`].getBoundingClientRect();
             const offset = rect.top + window.scrollY;
@@ -56,23 +55,51 @@ export default {
                 behavior: 'smooth'
             })
         },
-
+    },
+    methods: {
+        onScroll(){
+            if(this.ArrayList['section-1'].getBoundingClientRect().top -100 >= 0){
+                this.$store.state.watchIndex = 0;
+            }else if(this.ArrayList['section-2'].getBoundingClientRect().top -100 >= 0){
+                this.$store.state.watchIndex = 1;
+            }else if(this.ArrayList['section-3'].getBoundingClientRect().top -100 >= 0){
+                this.$store.state.watchIndex = 2;
+            }else{
+                this.$store.state.watchIndex = 3;
+            }
+        }
     },
     mounted() {
         this.ArrayList = this.$refs;
-    }, 
+        this.onScroll
+        window.addEventListener("scroll",this.onScroll)
+    },
+    beforeUnmount(){
+        window.removeEventListener("scroll",this.onScroll)
+    }
 }
 </script>
-<style scoped>
-  .mainWrap{flex:80%; margin:0; margin-left:280px; padding:0; box-sizing: border-box;}
+<style lang="scss" scoped>
+.mainWrap{flex:80%; margin:0; padding:0; margin-left:320px; box-sizing: border-box;
+    @media (max-width: 991px){
+        flex:100%;
+        width:100%;
+        margin:65px 0 0 0;
+        overflow: hidden;
+}
+}
   .bg{
-      width:30vw;
+      width:40vw;
       height: 100vh;
       display: block;
       position:fixed;
       top:0;
       right:0;
       z-index: -1;
-      background-image: linear-gradient(225deg, rgba(170, 255, 210, 0.6) 0%,rgba(255, 254, 190,0.5) 30%, rgba(255, 254, 190,0) 40%);
-  }
+      background-image: linear-gradient(225deg, var(--gradation-start) 0%,var(--gradation-middle) 30%, var(--gradation-end) 40%);
+      @media (max-width: 991px){
+        width:100vw;
+        background-image: linear-gradient(315deg, var(--gradation-start) 0%,var(--gradation-middle) 30%, var(--gradation-end) 40%);
+    }
+}
 </style>

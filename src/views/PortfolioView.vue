@@ -1,15 +1,15 @@
 <template>
     <div class="mainWrap">
         <div class="goback">
-            <button @click="$router.go(-1)">&#8636; <span>뒤로가기</span></button>
+            <button @click="$router.go(-1);this.$store.state.selectIndex = 2;">&#8636; <span>뒤로가기</span></button>
         </div>
         <div class="catenavi">
             <ul>
-                <li :class="$store.state.catename === '전체' && 'on'" @click="$store.state.catename = '전체'">전체</li>
-                <li :class="$store.state.catename === '클론코딩' && 'on'" @click="$store.state.catename = '클론코딩'">클론코딩</li>
-                <li :class="$store.state.catename === '웹앱' && 'on'" @click="$store.state.catename = '웹앱'">웹앱</li>
-                <li :class="$store.state.catename === '홈페이지' && 'on'" @click="$store.state.catename = '홈페이지'">홈페이지</li>
-                <li :class="$store.state.catename === '미니 프로젝트' && 'on'" @click="$store.state.catename = '미니 프로젝트'">미니 프로젝트</li>
+                <li :class="$store.state.catename === '전체' && 'on'" @click="$store.state.catename = '전체'; this.move()">전체</li>
+                <li :class="$store.state.catename === '클론코딩' && 'on'" @click="$store.state.catename = '클론코딩'; this.move()">클론코딩</li>
+                <li :class="$store.state.catename === '웹앱' && 'on'" @click="$store.state.catename = '웹앱'; this.move()">웹앱</li>
+                <li :class="$store.state.catename === '홈페이지' && 'on'" @click="$store.state.catename = '홈페이지'; this.move()">홈페이지</li>
+                <li :class="$store.state.catename === '미니 프로젝트' && 'on'" @click="$store.state.catename = '미니 프로젝트'; this.move()">미니 프로젝트</li>
             </ul>
         </div>
         <div v-for="(e,index) in CateItem" :key="index" class="portitem">
@@ -58,6 +58,11 @@ export default {
             })
         }
     },
+    methods: {
+        move(){
+            window.scrollTo({top: 0, behavior: 'smooth'})
+        }
+    },
     created() {
         window.scrollTo({top: 0, behavior: 'smooth'})
         AOS.init();
@@ -65,24 +70,45 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.mainWrap{flex:80%; margin:0; padding:0; margin-left:280px; box-sizing: border-box;}
+@import "@/styles/mixins.scss";
+.mainWrap{flex:80%; margin:0; padding:0; margin-left:320px; box-sizing: border-box;
+    @media (max-width: 991px){
+        flex:100%;
+        width:100%;
+        margin:65px 0 0 0;
+}
+}
 .catenavi{
-    ul{display: flex; gap:20px; font-size:1.2rem;
+    position:sticky;
+    top:0px;
+    background: var(--color-background);
+    padding:5px 0;
+    @media (max-width: 991px){
+        top:60px;
+    }
+}
+.catenavi ul{display: flex; column-gap:20px; font-size:1.2rem;
+    li{
+        padding: 0 15px;
+        border: 1px solid var(--color-point2);
+        border-radius: 5px;
+        line-height: 2rem;
+        cursor: pointer;
+    }
+    li:hover{
+        background-color: var(--color-point2);
+        color:var(--color-text)
+    }
+    .on{
+        border: 1px solid var(--color-point);
+        background-color: var(--color-point);
+        color:white;
+    }
+    @media (max-width: 991px){
+        column-gap:10px;
         li{
-            padding: 0 15px;
-            border: 1px solid #90BF87;
-            border-radius: 5px;
-            line-height: 2rem;
-            cursor: pointer;
-        }
-        li:hover{
-            background-color: #90BF87;
-            color:white;
-        }
-        .on{
-            border: 1px solid #FF7F5B;
-            background-color: #FF7F5B;
-            color:white
+            padding:0 5px;
+            font-size:1rem;
         }
     }
 }
@@ -97,41 +123,45 @@ span{
     border:1px solid #777;
     border-radius: 10px;
     padding:20px;
-    .portcate{
-        color:#AAAAAA;
-    }
+    box-sizing: border-box;
+    @media (max-width: 991px){width:100%; margin:0 0 30px; padding:10px;}
     img{
-        width: 55%;
+        flex-basis: 55%;
+        width:55%;
         height: auto;
         object-fit: cover;
         object-position: top center;
         border:1px solid #ddd;
+        @media (max-width: 991px){flex-basis:100%; width: 100%;}
     }
     h3{
         margin:0;
         font-size:1.5rem;
     }
     .porttext{
+        flex-basis:40%;
         width:40%;
         box-sizing: border-box;
         padding: 30px 10px;
         margin-left: 10px;
+        @media (max-width: 991px){flex-basis:100%; width:100%; padding:20px 0; margin: 0;}
     }
     .tags, .link{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         padding: 0;
-        margin:0;
-        gap:0 8px;
+        margin:20px 0;
+        gap:8px;
         font-size: 1rem;
+        @media (max-width: 991px){margin : 10px 0;}
     }
     .tagob{
         padding: 2px 10px;
         line-height: 1.5rem;
-        border: 1px solid #FF7F5B;
+        border: 1px solid var(--color-point2);
         border-radius: 15px;
-        color: #666666;
+        color: var(--color-text);
     }
     .desc{
         margin:20px 0;
@@ -144,18 +174,18 @@ span{
     a{
         padding: 4px 16px;
         line-height: 1.5rem;
-        background-color: #90BF87;
+        background-color: var(--color-point2);
         border-radius: 15px;
         color:#fffcf4;
     }
-    a:hover{
-        background-color: #FF7F5B;
+    a:hover, a:active{
+        background-color: var(--color-point2);
     }
 }
 .goback{
-    background: #FF7F5B;
-    margin-bottom: 20px;
+    background: var(--color-point);
     padding: 0 10px;
+    overflow: hidden;
     button{
         font-size:5rem;
         padding:5px 10px;
@@ -165,8 +195,9 @@ span{
         color:white;
         z-index: 5;
         transition: all 1s;
+        cursor: pointer;
         span{
-            color:#FF7F5B;
+            color:var(--color-point);
             font-size:5rem;
         }
         &::before{
@@ -174,17 +205,27 @@ span{
             position:absolute;
             top:0; right:0; bottom:0; left:0px;
             z-index: -1;
-            background:white;
+            background: white;
             transform:skew(-45deg);
             opacity: 0;
+            @media (max-width: 991px){opacity: 1;}
         }
+        @media (max-width: 991px){
+            font-size:2rem;
+            padding-right:30px;
+            color: var(--color-point);
+            span{
+                font-size:3rem;
+            }
+    }
     }
     button:hover{
         padding-right:100px;
-        color: #FF7F5B;
+        color: var(--color-point);
         &::before{
             opacity:1
         }
+        @media (max-width: 991px){padding-right: 30px;}
     }
 }
 </style>

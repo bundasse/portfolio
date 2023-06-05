@@ -2,7 +2,7 @@
     <div id="skill">
         <h2>사용 기술</h2>
         <p class="subtext">Skills</p>
-        <ul>
+        <ul class="skilllist">
             <li v-for="e in skills" :key="e" data-aos="fade-left" data-aos-duration="500">
                 <img :src="require(`@/assets/icons/${e.icon}`)" :alt="e.name">
                 <div class="skilltext">
@@ -31,14 +31,12 @@ export default {
 </script>
 <style lang="scss">
 @import "@/styles/mixins.scss";
-#skill{
-    padding:5% 0 10% 0;
-    width:90%;
-    min-height: 100vh;
-    height:100%;
-}
+#skill{@include wrap};
 @include title;
-ul li{
+.skilllist{
+    padding:0 10px;
+}
+.skilllist li{
     display:flex;
     flex-wrap: wrap;
     justify-items: flex-start;
@@ -46,10 +44,17 @@ ul li{
     img{
         width:64px;
         height:64px;
+        @media (max-width: 991px){
+           width: 50px;
+           height: 50px;
+        }
     }
     .skilltext{
         margin-left: 20px;
         max-width:800px;
+        @media (max-width: 991px){
+            margin: 0;
+        }
         p{
             margin:0;
         }

@@ -11,10 +11,14 @@ export default({
   components: {
     NaviView
   },
+  mounted() {
+    document.documentElement.setAttribute("data-theme", "light");
+  },
 });
 </script>
 <style lang="scss">
-body{margin:0; padding:0;}
+@import "@/styles/mixins.scss";
+body{margin:0; padding:0; background:var(--color-background); color:var(--color-text)}
 #wrap{
   display:flex;
   flex-wrap: wrap;

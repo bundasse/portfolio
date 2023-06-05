@@ -7,7 +7,7 @@
     {
         "icon":"css3.svg",
         "name":"CSS3",
-        "desc":"디자인에 충실하게 화면을 구현할 수 있습니다.CSS Flex, CSS Grid를 사용해 레이아웃을 만들 수 있으며 CSS 애니메이션을 사용할 수 있습니다. CSS 프레임워크인 Tailwind CSS를 사용할 수 있습니다."
+        "desc":"디자인에 충실하게 화면을 구현할 수 있습니다.CSS Flex, CSS Grid를 사용해 레이아웃을 만들 수 있으며 CSS 애니메이션을 사용할 수 있습니다."
     },
     {
         "icon":"jquery.png",
@@ -28,6 +28,12 @@
 
     },
     {
+        "icon":"tailwindcss.svg",
+        "name":"Tailwind CSS",
+        "desc":"Tailwind CSS로 웹페이지를 꾸밀 수 있습니다. 가장 자주 사용한 CSS 프레임워크이며 색상, 폰트 커스터마이징에도 익숙합니다."
+
+    },
+    {
         "icon":"typescript.png",
         "name":"TypeScript",
         "desc":"TypeScript의 기본 타입을 이해하고 있으며 함수의 타입 작성, 인터페이스, 유니언 타입 등의 개념을 이해하고 프로젝트에 적용할 수 있습니다."
@@ -36,7 +42,7 @@
     {
         "icon":"vuejs.svg",
         "name":"Vue.js",
-        "desc":"Vue.js를 사용하여 웹애플리케이션을 구현할 수 있습니다.<br/>라우터, 컴포넌트 등 요소를 적절하게 활용하여 SPA(Single Page Application)을 제작했습니다.<br/>axios로 공공데이터 API를 활용할 수 있습니다. Firebase를 활용해 로그인, 인증, firestore를 이용한 간단한 데이터베이스(게시판 페이지) 구축을 할 수 있습니다."
+        "desc":"Vue.js를 사용하여 웹 애플리케이션을 구현할 수 있습니다.<br/>라우터, 컴포넌트 등 요소를 적절하게 활용하여 SPA(Single Page Application)을 제작했습니다.<br/>Axios로 공공데이터 API를 활용할 수 있습니다. Firebase를 활용해 로그인, 인증, Firestore를 이용한 간단한 데이터베이스(게시판 페이지) 구축을 할 수 있습니다."
 
     }
 ]

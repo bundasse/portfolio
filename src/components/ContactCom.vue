@@ -51,11 +51,9 @@ export default {
 <style lang="scss">
 @import "@/styles/mixins.scss";
 #contact{
-    padding:3% 0;
-    width:100%;
-    min-height: 85vh;
-    height:100%;
-    box-sizing: border-box;
+    padding:5% 0;
+    @include wrap;
+    min-height: 65vh;
 }
 form>div{
     display: flex;
@@ -64,14 +62,20 @@ form>div{
     width: 600px;
     margin: 50px 0 10px;
     row-gap: 10px;
+    @media (max-width: 991px){
+        width: 100%;
+    }
     .sec2{
         flex-basis: 49%;
+        @media (max-width: 991px){
+            flex-basis: 100%;
+        }
         label{
             width: 100%;
             font-size:1.5rem;
             span{
                 font-size: 0.8em;
-                color:lightgray;
+                opacity: 0.3;
             }
         }
         input{
@@ -79,6 +83,8 @@ form>div{
             padding:0.5rem 0;
             font-size: 1.2rem;
             border:1px solid #cccccc;
+            background: transparent;
+            color:var(--color-text);
         }
         
     }
@@ -89,7 +95,7 @@ form>div{
             font-size:1.5rem;
             span{
                 font-size: 0.8em;
-                color:lightgray;
+                opacity: 0.3;
             }
         }
         textarea{
@@ -97,11 +103,13 @@ form>div{
             padding:0.5rem 0;
             font-size: 1.2rem;
             border:1px solid #cccccc;
+            background: transparent;
+            color:var(--color-text);
         }
     }
 }
 .reply{
-    color:#FF7F5B;
+    color:var(--color-point);
 }
 @include title;
 @include buttons(250px);

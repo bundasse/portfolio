@@ -39,32 +39,31 @@ export default {
             cateselect:'전체'
         }
     },
-    mounted() {
-    },
-    methods: {
-    },
 }
 </script>
 <style lang="scss">
 @import "@/styles/mixins.scss";
-#portfolio{
-    padding:5% 0;
-    width:90%;
-    min-height: 100vh;
-    height:100%;
-}
+#portfolio{@include wrap}
 @include title;
 section{
     display:flex;
     margin-top: 30px;
     justify-content: space-around;
+    @media (max-width: 991px){
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
     a{
         flex-basis: 22%;
         height: 500px;
-        border:2px solid #FF7F5B;
-        background: #FF7F5B;
+        border:2px solid var(--color-point);
+        background: var(--color-point);
         position: relative;
         overflow: hidden;
+        @media (max-width: 991px){
+            flex-basis: 100%;
+            height: 350px;
+        }
         &::after{
             position: absolute;
             content:'';
@@ -76,6 +75,9 @@ section{
             background: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0.5));
             transition: all 1s;
             z-index: 10;
+            @media (max-width: 991px){
+                opacity: 0.8;
+            }
         }
         &:hover::after{
             opacity: 1;
@@ -101,6 +103,11 @@ section{
                 font-size:1.2rem;
                 line-height: 1.8rem;
             }
+            @media (max-width: 991px){
+                    opacity: 1;
+                    top:0;
+                    padding: 0;
+                }
         }
         &:hover article{
             top: 0;

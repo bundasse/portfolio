@@ -3,14 +3,16 @@
         <div>
             <h2>함께 성장하는 프론트엔드 개발자</h2>
             <p class="subtext">Front-end developer</p>
-            <p>
-                누구나 쉽게 쓸 수 있는 웹을 만들고 싶은,<br/>
-                교류와 소통으로 레벨업 하는<br/>
+            <div class="contents">
+                <p>
+                    누구나 쉽게 쓸 수 있는 웹을 만들고 싶은,<br/>
+                    교류와 소통으로 레벨업 하는<br/>
                 프론트엔드 개발자 조영민입니다.
             </p>
             <ul class="link">
                 <li v-for="(e,i) in link" :key="e"  @mouseenter="mouseOn=true; selecti=i" @mouseleave="mouseOn = false;selecti=null"><a :href="e.link"><img :src="mouseOn ===true && selecti ===i? require(`@/assets/icons/${e.icon}_on.png`):require(`@/assets/icons/${e.icon}.png`)" :alt="e.alt"/></a></li>
             </ul>
+            </div>
         </div>
         <button class="submit" @click="$store.state.selectIndex = 3">메일 바로가기</button>
     </div>
@@ -33,13 +35,15 @@ export default {
 </script>
 <style lang="scss">
 @import "@/styles/mixins.scss";
-.wrap{
-    padding:10% 0 0 0;
-    width:100%;
-    min-height: 100vh;
-    height:100%;
+.wrap{@include wrap;
+    padding-top: 10%;
+    @media (max-width: 991px){padding-top:150px}
     box-sizing: border-box;
     line-height: 1.8rem;
+}
+.contents{
+    @media (max-width: 991px){
+    padding-left:30px;}
 }
 .link{
     display:flex;
