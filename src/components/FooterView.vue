@@ -37,6 +37,7 @@ export default {
     li button{
         width:4rem;
     height:4rem;
+    padding:0;
     color:var(--color-background);
     border:1px solid var(--color-point);
     border-radius: 50%;

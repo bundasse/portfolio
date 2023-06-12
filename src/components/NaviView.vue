@@ -189,8 +189,9 @@ export default {
       position: relative;
       height: 20px;
       width: 20px;
-      border: 1px var(--color-point2) solid;
-      border-radius: 50%;
+      padding:0;
+      border: 2px var(--color-point2) solid;
+      border-radius: 100%;
       background: none;
       cursor: pointer;
     }
