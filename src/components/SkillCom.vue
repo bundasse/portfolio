@@ -42,8 +42,8 @@ export default {
     justify-items: flex-start;
     margin-bottom: 2rem;
     img{
-        width:64px;
-        height:64px;
+        width:32px;
+        height:32px;
         @media (max-width: 991px){
            width: 50px;
            height: 50px;
