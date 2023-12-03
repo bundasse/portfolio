@@ -59,7 +59,7 @@ export default {
             margin:0;
         }
         .skillname{
-            font-size:1.5rem;
+            font-size:1.2rem;
             font-weight: 600;
             margin-bottom:10px;
         }
